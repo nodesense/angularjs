@@ -1,0 +1,39 @@
+<h2>{{title}}</h2>
+
+
+<div class="flex three">
+ <div >
+     <h2>Our Products</h2>
+     <!--
+     <ul >
+         <li ng-repeat="product in products">
+             {{product.name}}
+         </li>
+     </ul> -->
+
+     <div ng-repeat="product in products">
+         <div product-widget product="product" add-to-cart="addToCart(product)" >
+         </div>>
+     </div>
+     
+ </div>
+
+<div >
+   <h2>Our Brands</h2>
+     <ul >
+         <li ng-repeat="brand in brands">
+             {{brand.name}}
+         </li>
+     </ul>
+ </div>
+
+ <div >
+   <h2>Our Stores</h2>
+     <ul >
+         <li ng-repeat="state in states">
+             {{state.name}}
+         </li>
+     </ul>
+ </div>
+
+</div>

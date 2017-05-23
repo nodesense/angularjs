@@ -1,0 +1,17 @@
+<div ng-controller="NavigationController">
+   <nav>
+     <a href="#/home" class="button">Home</a>
+      <a href="#/home-resolve" class="button">Home2</a>
+     <a href="#/products/list" class="button">Products</a>
+     <a href="#/brands/list" class="button">Brands</a>
+	 <!--  ng-if="hasRole('User')" -->
+     <a href="#/cart" class="button">Cart</a>
+      
+       <a href="#/about"  class="button" >About</a>
+      
+      <a href="#/auth/login" class="button" ng-cloak="" ng-if="!authenticated">Login</a>
+      <a ng-click="logout()" class="button" ng-cloak="" ng-if="authenticated">Logout</a>
+
+    
+   </nav>
+ </div>

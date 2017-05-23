@@ -1,0 +1,35 @@
+<h2>Product Edit</h2>
+
+
+<style>
+input.ng-invalid-valid-year {
+    background-color: red;
+}
+input.ng-valid-valid-year {
+    background-color: white;
+} 
+</style>
+
+
+<form name="productForm" ng-submit="submit()">
+    <label for="name">Name</label>
+    <input type="text" ng-model="product.name" name="productName" validate-name
+        ng-change="productNameChanged()"
+     >
+ 
+     <p>
+    <span ng-show="productForm.productName.$error.validName">Duplicate name</span>
+    </p>
+
+    <label for="weight">
+    <input type="text" ng-model="product.weight" name="productWeight" weight ng-change="productWeightChanged()">
+
+    <label for="year">Year</label>
+    <input type="number" ng-model="product.year" name="productYear" validate-year >
+    
+    <p>
+    <span ng-show="productForm.productYear.$error.validYear" >InValid Year, year should be between 2010 to 2016</span>
+    </p>
+
+    <button ng-click="saveProduct()" type="submit" ng-disabled="productForm.$invalid">Save</button>
+</form>

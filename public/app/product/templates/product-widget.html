@@ -1,0 +1,17 @@
+ <article class="card">
+            <header>
+               <a href="#/products/view/{{product.id}}">
+                {{product.name | uppercase | myCustomFilter}}
+               </a>
+            </header>
+            <p>RAM: {{product.ram}}</p>
+            <p>Weight: {{product.weight}}</p>
+            <p>Year: {{product.year}}</p>
+
+             <p class="promotion"></p>
+             
+            <footer>
+                <button ng-click="addToCart(product)">+Cart</button>
+                <a href="#/products/edit/{{product.id}}">Edit</a>
+            </footer>
+</article>

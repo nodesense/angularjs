@@ -1,0 +1,23 @@
+{
+  "name": "angularjs",
+  "version": "1.0.0",
+  "description": "NodeSense AngularJS Workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodesense/angularjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodesense/angularjs/issues"
+  },
+  "homepage": "https://github.com/nodesense/angularjs#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

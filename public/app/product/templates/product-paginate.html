@@ -1,0 +1,11 @@
+<h2>Product List</h2>
+
+<div class="flex four">
+<div ng-repeat="product in products" >
+    <product-info>
+    </product-info>
+</div>
+</div>
+
+<button ng-click="next()" ng-disabled="!enableNext" >Next</button>
+<button ng-click="back()" ng-disabled="!enableBack" >Back</button>

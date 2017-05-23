@@ -1,0 +1,10 @@
+<h2>{{product.name}}</h2>
+
+<p>Weight: {{product.weight}}</p>
+
+<button ng-click="gotoList()">Product List</button>
+
+<button ng-click="editProduct(product.id)"  ng-if="hasRole('Admin') || hasRole('Staff')">Edit</button>
+
+
+<button ng-click="deleteProduct(product.id)"  ng-if="hasRole('Admin')">Delete</button>

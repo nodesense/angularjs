@@ -1,0 +1,22 @@
+<article class="card" >
+        <header>
+            <h4><a href="#/products/view/{{product.id}}">{{product.name | uppercase}}</a></h4>
+        </header>
+        <p>
+            RAM : {{product.ram}}
+        </p>
+         <p>
+            Weight : {{product.weight}}
+        </p>
+
+         <p>
+            Year : {{product.year}}
+        </p>
+
+         <p class="promotion"></p>
+
+        <footer>
+        <button class="success" ng-click="addToCart(product)" >+Cart</button>
+        </footer>
+</article>
+ 

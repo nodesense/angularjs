@@ -1,0 +1,55 @@
+<h2>Product Edit</h2>
+
+
+<style>
+input.ng-invalid-valid-year {
+    background-color: red;
+}
+input.ng-valid-valid-year {
+    background-color: white;
+} 
+</style>
+
+
+<form name="productForm">
+    <label for="name">Name</label>
+    <input name="name" ng-model="product.name" required ng-minlength="2" ng-maxlength="100" />
+
+    <span ng-if="productForm.name.$error.required">
+        required field 
+    </span>
+
+
+    <span ng-if="productForm.name.$error.minlength">
+        Min Length must be 2 chars
+    </span>
+
+
+    <span ng-if="productForm.name.$error.maxlength">
+        Max length should be 100 chars
+    </span>
+
+    <br />
+
+    <label for="year">Year</label>
+    <input name="year" ng-model="product.year"  year-validator />
+
+    <span ng-if="productForm.year.$error.validYear">
+        Invalid Year 
+    </span>
+    <br />
+    
+    <label for="weight">Weight</label>
+    <input name="weight" ng-model="product.weight" />
+
+    
+    <label for="ram">Ram</label>
+    <input name="ram" ng-model="product.ram" />
+
+    <button ng-click="saveProduct()">Save</button>
+
+</form>
+
+<button ng-click="deleteProduct()" ng-if="hasRole('Admin')">Delete</button>
+
+<button ng-click="gotoListPage()">List Page</button>

@@ -1,0 +1,23 @@
+<h2>Products Home {{subTitle}} </h2>
+
+
+<a href="#/products/list" class="button">List</a>
+<a href="#/products/paginate" class="button">Paginate</a>
+<a href="#/products/create" class="button" >Create</a>
+ 
+
+<div class="flex three">
+   
+     <div class="two-third">
+          <ui-view>
+
+          </ui-view>
+     </div>
+
+    <div >
+        <ui-view name="tips">
+
+        </ui-view>    
+    </div>
+
+</div>

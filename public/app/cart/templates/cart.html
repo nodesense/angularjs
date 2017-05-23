@@ -1,0 +1,14 @@
+<button ng-click="emptyCart()">Empty Cart</button>
+
+<table>
+ <tr>
+     <th>Name</th>
+     <th>Quantity</th>
+     <th>Delete</th>
+ </tr>
+ <tr ng-repeat="product in products">
+     <td>{{product.name}}</td>
+     <td>{{product.quantity}}</td>
+      <td><button ng-click="removeFromCart(product.id)">Delete</button></td>
+ </tr>
+</table>
