@@ -1,0 +1,2 @@
+# angularjs
+NodeSense AngularJS Workshop
