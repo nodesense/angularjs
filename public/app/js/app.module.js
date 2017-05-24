@@ -7,6 +7,9 @@ angular.module("productApp", [
     "auth.module",
     "cart.module",
 
+    "app.exceptions",
+    "app.directives",
+    
     "app.config",
     "app.controllers",
     
@@ -20,6 +23,7 @@ angular.module("productApp", [
     console.log("title run");
     $rootScope.appTitle = "Product App";
     $rootScope.title = "Welcome to Angular 1.5";
+
 })
 .run(function(DEBUG){
     console.log(" run 2 Is Debug", DEBUG);   

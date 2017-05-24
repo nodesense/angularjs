@@ -20,3 +20,7 @@ angular.module("app.controllers", [])
          return authService.hasRole(name);
      }
 })
+
+.controller("FooterController", function($scope){
+    $scope.pageLikes = 100;
+})

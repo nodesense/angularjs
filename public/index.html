@@ -31,7 +31,12 @@
   <ui-view>
   </ui-view>
 
-  
+  <div ng-controller="FooterController">
+    <hr />
+    Likes: {{pageLikes}}
+    <likes ng-model="pageLikes" >
+    </likes>
+  </div>
 
 </div>
  
@@ -50,6 +55,11 @@
  
    
   <script src="app/js/app.module.js" type="text/javascript"></script>
+
+  <script src="app/js/app.exceptions.js" type="text/javascript"></script>
+
+
+  <script src="app/js/app.directives.js" type="text/javascript"></script>
 
   <script src="app/js/app.config.js" type="text/javascript"></script>
 
