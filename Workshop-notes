@@ -1,0 +1,21 @@
+Software:
+ 1. NodeJS - 6.10.x
+ 2. IDE: optional: "Visual Studio Code"
+
+
+open Command prompt
+
+> git clone https://github.com/nodesense/angularjs
+> cd angularjs
+> npm install
+
+
+> npm install lite-server   -g
+
+> npm start
+
+Command Prompt 2
+
+> cd angularjs
+
+> npm run api
