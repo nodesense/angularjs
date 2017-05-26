@@ -2,6 +2,12 @@ angular.module("home.controllers", [])
 
 //Enable /delayed api, this page is unblanced, load brands or products first, then load another later
 .controller("HomeController", function($scope, $rootScope, Product, brandService, $http, apiEndPoint, $q){
+     $scope.count = 100;
+     $scope.siteCount = 5000;
+
+     $scope.countClicked = function() {
+         alert("Count clicked")
+     };
 
      $scope.$emit("setPageTitle", "Home");
      //$scope.appTitle = "Home";

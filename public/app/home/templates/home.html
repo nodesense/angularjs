@@ -1,5 +1,27 @@
 <h2>{{title}}</h2>
 
+<h4>Home Page Likes {{count}} </h4>
+ 
+<likes count="count" 
+       title="For Home"
+       likes-click = "countClicked()"
+       id = "home"
+
+       >
+    <h2>Home Likes {{count}} </h2>
+</likes>
+ 
+
+<h4>Site count {{siteCount}} </h4>
+ 
+ 
+<likes count="siteCount" 
+        title="For Site"
+        template="likes2.html"
+        >
+    <h2>Website Likes {{siteCount}}</h2>
+</likes>
+ 
 
 <div class="flex three">
  <div >

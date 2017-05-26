@@ -1,5 +1,8 @@
 angular.module("about.controllers", [])
 .controller("AboutController", function($scope){
+    
+    $scope.count = 1000;
+    
     $scope.title = "About Page ";
     $scope.description = "Product App Company";
     
