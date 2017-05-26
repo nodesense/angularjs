@@ -13,8 +13,6 @@ angular.module('app.directives', [])
        
         templateUrl: '/app/templates/likes.html',
 
-        
-
          link: function(scope, iElement, iAttrs, ngModel ) {
              console.log("footer");
 

@@ -18,7 +18,9 @@ angular.module("product.directives", [])
         },
 
         controller: function($scope) {
-             
+             $scope.test = function() {
+                 console.log("test", $scope.product);
+             }
         },
 
         link: function(scope, elem, attr) {

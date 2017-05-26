@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "lite-server",
+    "api": "node server/api-server.js",
+    "api-with-auth": "node server/api-server.js authEnabled",
+    "api-nocors": "node server/api-server.js noCors"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,12 @@
   "homepage": "https://github.com/nodesense/angularjs#readme",
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "json-server": "^0.10.1",
+    "jwt-simple": "^0.5.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1"
   }
 }
